@@ -4,4 +4,4 @@
 
 Plus, it's animated!
 
-![screenshot -->](
+![screenshot -->](https://github.com/scottnyerges/swatchbuddy/blob/master/Screen%20Shot%202017-12-30%20at%205.49.55%20PM.png)
