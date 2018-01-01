@@ -4,6 +4,4 @@
 
 ![Plus, it's animated!] --> (https://spark.adobe.com/video/iXpTYaFdtZE8e)
 
-![screenshot -->](https://github.com/scottnyerges/swatchbuddy/blob/master/Screen%20Shot%202018-01-01%20at%204.09.28%20PM.png)
-
 ![screenshot -->](https://github.com/scottnyerges/swatchbuddy/blob/master/Screen%20Shot%202018-01-01%20at%204.10.15%20PM.png)
