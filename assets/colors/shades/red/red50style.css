@@ -1,0 +1,115 @@
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+/* BASIC ARCHITECTURE STYLE */
+
+.item-a {
+  grid-area: homelink;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.item-b{
+  grid-area: grey500;
+  background-color: #FFEBEE;
+    border-style: solid;
+  border-color: #FFEBEE;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+  min-height: 500px;
+  color: white;
+}
+.item-c{
+  grid-area: wht;
+    background-color: white;
+    margin-top: 10px;
+/*      border-style: solid;
+  border-color: white;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+  color: white;*/
+  text-align: center;
+}
+
+
+
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.fade-in.three {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+
+
+.container{
+  display: grid;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+  justify-items: center;
+/*  grid-gap: 5px;*/
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 25px;
+  grid-template-areas: 
+                      "homelink"
+                      "grey500"
+                      "wht"
+
+
+}
+
+.column {
+  font-family: 'Comfortaa', cursive;
+font-size: 14px;
+}
+
+body {
+/*padding: 5px;*/
+font-family: 'Comfortaa', cursive;
+font-size: 18px;
+color: #757575;
+}
+
+a {
+  text-decoration: none;
+}
+
+#typeStyle {
+  font-size: 10px;
+  text-align: center;
+}

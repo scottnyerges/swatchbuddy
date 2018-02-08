@@ -1,0 +1,256 @@
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+/* BASIC ARCHITECTURE STYLE */
+
+/*.item-a{
+  grid-area: header;
+  background-color: #000000;
+  border-style: solid;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 20px;
+  width: 290px;
+}*/
+.item-b{
+  grid-area: headerA;
+  background-color: #827717;
+    border-style: solid;
+  border-color: #827717;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+  color: white;
+}
+.item-c{
+  grid-area: headerB;
+    background-color: #9E9D24;
+      border-style: solid;
+  border-color: #9E9D24;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+  color: white;
+}
+.item-d{
+  grid-area: headerC;
+    background-color: #AFB42B;
+      border-style: solid;
+  border-color: #AFB42B;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: white;
+}
+.item-e{
+  grid-area: headerD;
+    background-color: #C0CA33;
+      border-style: solid;
+  border-color: #C0CA33;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: white;
+}
+.item-f{
+  grid-area: headerE;
+    background-color: #CDDC39;
+      border-style: solid;
+  border-color: #CDDC39;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: white;
+}
+.item-g{
+  grid-area: headerF;
+    background-color: #D4E157;
+      border-style: solid;
+  border-color: #D4E157;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: black;
+}
+.item-h{
+  grid-area: headerG;
+    background-color: #DCE775;
+      border-style: solid;
+  border-color: #DCE775;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: black;
+}
+.item-i{
+  grid-area: headerH;
+    background-color: #E6EE9C;
+      border-style: solid;
+  border-color: #E6EE9C;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: black;
+}
+.item-j{
+  grid-area: headerI;
+    background-color: #F0F4C3;
+      border-style: solid;
+  border-color: #F0F4C3;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: black;
+}
+.item-k{
+  grid-area: headerJ;
+    background-color: #F9FBE7;
+      border-style: solid;
+  border-color: #F9FBE7;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+    color: black;
+
+}
+
+.item-l{
+  grid-area: headerK;
+    background-color: white;
+      border-style: sowhite#FAFAFA;
+  border-width: 10px;
+    border-radius: 20px;
+  width: 290px;
+  margin-top:10px;
+  color: black;
+    text-align: center;
+}
+
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.fade-in.three {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.fade-in.four {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.fade-in.five {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+.fade-in.six {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.fade-in.seven {
+  -webkit-animation-delay: 3.5s;
+  -moz-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.fade-in.eight {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.fade-in.nine {
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+.fade-in.ten {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.fade-in.eleven {
+  -webkit-animation-delay: 5.5s;
+  -moz-animation-delay: 5.5s;
+  animation-delay: 5.5s;
+}
+.fade-in.twelve {
+  -webkit-animation-delay: 6.s;
+  -moz-animation-delay: 6.5s;
+  animation-delay: 6.5s;
+}
+
+
+
+
+.container{
+  display: grid;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+  justify-items: center;
+  grid-gap: 5px;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 25px;
+  grid-template-areas: 
+                      "header"
+                      "headerA"
+                      "headerB"
+                      "headerC"
+                      "headerD"
+                      "headerE"
+                      "headerF"
+                      "headerG"
+                      "headerH"
+                      "headerI"
+                      "headerJ"
+                      "headerK"
+                      "headerL"
+                      "headerM"
+
+}
+
+.column {
+  font-family: 'Comfortaa', cursive;
+font-size: 14px;
+}
+body {
+/*padding: 5px;*/
+font-family: 'Comfortaa', cursive;
+font-size: 18px;
+color: #757575;
+}
+
+#typeStyle {
+  font-size: 10px;
+}
